@@ -22,5 +22,8 @@ int main(){
     for(i = 0; i < SIZE; i++){
         printf("p1[%d] = %d p2[%d] = %f\n", i, p1[i], i, p2[i]);
     }
+    // メモリの開放
+    free(p1);
+    free(p2);
     return 0;
 }
